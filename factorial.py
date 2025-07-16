@@ -1,22 +1,10 @@
-# def factorial(n):
-#     if n < 0:
-#         return "factorial is not defined for negative number."
-#     result = 1
-#     for i in range(1,n+1):
-#         result *=i
-#     return result
 
-# number = int(input("Enter a number: "))
+import math
 
-# print(f"The factorial of {number} is {factorial(number)}.")
+def factorial(num):
+    return (math.factorial(num))
 
-def factorial(n):
-    if n<0:
-       return "factorial is not defined for negative number."
-    if n == 0 or n ==1:
-       return 1
-    else:
-       return n *factorial(n-1)
-   
-number = int(input("Enter a number: "))
-print(f"The factorial of {number} is {factorial(number)}.")
+
+num= int(input('please enter a number to find the factorail : '))
+
+print('the factorial of the given number ' , num , "is" ,factorial(num))
